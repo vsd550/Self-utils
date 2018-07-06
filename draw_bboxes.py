@@ -64,3 +64,27 @@ def get_ax(rows=1, cols=1, size=16):
     _, ax = plt.subplots(rows, cols, figsize=(size*cols, size*rows))
     return ax
 
+###OPERATIONS on polygons and arrays
+poly = np.array(seg).reshape((int(len(seg)/2), 2))   ##CHECK??
+polygons.append(Polygon(poly))
+
+
+c = (np.random.random((1, 3))*0.6+0.4).tolist()[0]
+
+if _isArrayLike(ids): ###checking ---- Nice programming skills
+    return [self.imgs[id] for id in ids]
+elif type(ids) == int:
+    return [self.imgs[ids]]
+
+s  [785.0, 2382.5, 777.5, 2372.0, 780.0, 2369.5, 825.0, 2335.5, 833.5, 2344.0, 785.0, 2382.5]
+# for s in seg:
+#     print(s)
+s = seg[0]
+print('s ',s)
+poly1 = np.array(s)
+print('poly ',poly1)
+poly2 = poly1.reshape((int(len(s)/2), 2))   
+print('poly ',poly2)
+
+
+pylab.rcParams['figure.figsize'] = (30.0, 30.0)  ##imp for notebook
