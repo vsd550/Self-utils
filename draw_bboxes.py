@@ -88,3 +88,16 @@ print('poly ',poly2)
 
 
 pylab.rcParams['figure.figsize'] = (30.0, 30.0)  ##imp for notebook
+
+def poly2origpoly(poly, x, y, rate):
+    '''Adds the x y coordinate to get coordinate with respect to original image
+        x,y comes from image name'''
+    origpoly = []
+    for i in range(int(len(poly)/2)):
+        tmp_x = float(poly[i * 2] + x) / float(rate)
+        tmp_y = float(poly[i * 2 + 1] + y) / float(rate)
+        origpoly.append(tmp_x)
+        origpoly.append(tmp_y)
+    return origpoly
+###CNN formula
+W_2 = (W_1 - F + 2P)/S + 1
