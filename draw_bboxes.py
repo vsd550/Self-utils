@@ -101,3 +101,9 @@ def poly2origpoly(poly, x, y, rate):
     return origpoly
 ###CNN formula
 W_2 = (W_1 - F + 2P)/S + 1
+
+
+##takes the mean over the flattened array
+logger.info(precision   = -np.ones((T,R,K))
+precision.shape
+ap_default = np.mean(precision[precision > -1])
