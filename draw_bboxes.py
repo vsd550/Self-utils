@@ -107,3 +107,20 @@ W_2 = (W_1 - F + 2P)/S + 1
 logger.info(precision   = -np.ones((T,R,K))
 precision.shape
 ap_default = np.mean(precision[precision > -1])
+
+            #imp array operations -- np array
+ a_ = [[1, 2, 3], [4, 5], [6, 7, 8, 9,10]]
+a_
+np.array(a_)
+b_ = np.zeros([len(a_),len(max(a_,key = lambda x: len(x)))])
+
+for i,j in enumerate(a_):
+#     print(len(j))
+    print(j[-1])
+#     print(j[-2:])
+    b_[i][0:len(j[:-1])] = j[:-1]
+    b_[i][len(j[:-1]):-1 ] = 
+    
+    b_[i][-1] = j[-1]
+b_
+
