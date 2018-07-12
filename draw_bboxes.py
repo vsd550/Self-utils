@@ -124,3 +124,19 @@ for i,j in enumerate(a_):
     b_[i][-1] = j[-1]
 b_
 
+##another one
+            a = np.empty(((622, 3)))
+a.shape
+b = np.empty((263, 3))
+b.shape
+
+aa=np.array(a)
+bb =np.array(b)
+
+np.concatenate((aa, bb))
+
+ll = []
+
+ll.append(a)
+ll.append(b)
+ll
